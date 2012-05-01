@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Gcal rolodex by failcoder</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/failcoder/gcal_rolodex">View On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/failcoder/gcal_rolodex/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/failcoder/gcal_rolodex/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
+
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>Gcal rolodex</h1>
+          <p>Google Calendar Rolodex</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/failcoder">failcoder</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="http://twitter.com/#!/michigangraham">mattgraham</a></span>
+        </div>
+
+        <h1>Failcoder's Google Calendar Rolodex</h1>
+
+<p>This is a very simple addon that will read your Google Calendar and output the results in an accordion style list.</p>
+
+<h2>USAGE</h2>
+
+<p>Having included all necessary files, you will need to use the following exact lines in your HTML so that the script can target them:</p>
+
+<pre><code>&lt;section id="gcr-content"&gt;
+    &lt;div id="gcr-container" class="ac-container"&gt;
+        &lt;div id="gcr-loader"&gt;&lt;/div&gt;
+        &lt;div id="gcr-feed"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/section&gt;
+</code></pre>
+
+<p>...then just before your </p><p> tag add this script call.</p>
+
+<pre><code>&lt;script&gt;
+    gSchedule.launch({uri : 'http://www.google.com/calendar/feeds/en.usa%23holiday%40group.v.calendar.google.com/public/full'});
+&lt;/script&gt;
+</code></pre>
+
+<p>The uri points to your calendar and can be found within the Google Calendar settings panel.
+**NOTE: **You will want to use the "XML" version of the link.</p>
+
+<p>For a better understanding of how to put this together, please examine "schedule.html" to see the general layout.</p>
+
+<h2>Author</h2>
+
+<p>Steven Jackson (aka: Failcoder)</p>
+
+<h2>License</h2>
+
+<p>MIT</p>
+      </section>
+
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
+    
+  </body>
+</html>
